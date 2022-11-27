@@ -104,11 +104,11 @@ class SeabornPlugin(Plugin):
                      'fontscale':{'type':'doublespinbox','default':1.5,'range':(.5,3),
                                     'interval':.1, 'label':'font scale'}
                      #'logy':{'type':'checkbox','default':0,'label':'log y'},
-                     #'split':{'type':'checkbox','default':True,'label':'split'},
+                     'split':{'type':'checkbox','default':True,'label':'split'},
                      }
 
         grps = {'formats':['kind','palette'],
-                    'factors':['x','y','hue','col','row','col_wrap','ci'],
+                    'factors':['x','y','hue','col','row','col_wrap','ci','split'],
                     'labels':['fontscale']}
         self.groups = grps = OrderedDict(grps)
 
@@ -153,9 +153,9 @@ class SeabornPlugin(Plugin):
         width,height = 8,6
         #print (kwds)
         kind = kwds['kind']
-        keep = ['hue','col','row','x','y','palette','kind','col_wrap']
+        keep = ['hue','col','row','x','y','palette','kind','col_wrap','split']
         kwargs = {i:kwds[i] for i in keep}
-        for col in ['hue','col','row','x','y','col_wrap']:
+        for col in ['hue','col','row','x','y','col_wrap','split']:
             if kwargs[col] in ['',0]:
                 del kwargs[col]
         print (kwargs)
