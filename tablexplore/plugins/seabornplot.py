@@ -151,11 +151,14 @@ class SeabornPlugin(Plugin):
         kwds = dialogs.getWidgetValues(self.widgets)
         pf._initFigure()
         width,height = 8,6
-        #print (kwds)
+        print (kwds)
         kind = kwds['kind']
-        keep = ['hue','col','row','x','y','palette','kind','col_wrap','split']
+        if kind == 'violin':
+                    keep = ['hue','col','row','x','y','palette','kind','col_wrap','split']
+        else:
+            keep = ['hue','col','row','x','y','palette','kind','col_wrap']
         kwargs = {i:kwds[i] for i in keep}
-        for col in ['hue','col','row','x','y','col_wrap','split']:
+        for col in ['hue','col','row','x','y','col_wrap']:
             if kwargs[col] in ['',0]:
                 del kwargs[col]
         print (kwargs)
