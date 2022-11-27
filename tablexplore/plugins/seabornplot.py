@@ -102,9 +102,9 @@ class SeabornPlugin(Plugin):
                      'col_wrap':{'type':'spinbox','default':0,'range':(0,10),'label':'col wrap'},
                      'ci':{'type':'spinbox','default':95,'range':(0,100)},
                      'fontscale':{'type':'doublespinbox','default':1.5,'range':(.5,3),
-                                    'interval':.1, 'label':'font scale'}
+                                    'interval':.1, 'label':'font scale'},
                      #'logy':{'type':'checkbox','default':0,'label':'log y'},
-                     #'split':{'type':'checkbox','default':1,'label':'split'},
+                     'split':{'type':'checkbox','default':1,'label':'split'},
                      }
 
         grps = {'formats':['kind','palette'],
