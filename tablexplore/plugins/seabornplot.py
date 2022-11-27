@@ -108,7 +108,7 @@ class SeabornPlugin(Plugin):
                      }
 
         grps = {'formats':['kind','palette'],
-                    'factors':['x','y','hue','col','row','col_wrap','ci'],
+                    'factors':['x','y','hue','col','row','col_wrap','ci','split'],
                     'labels':['fontscale']}
         self.groups = grps = OrderedDict(grps)
 
