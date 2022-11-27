@@ -7,7 +7,7 @@ with open('description.txt') as f:
 
 setup(
     name = 'tablexplore',
-    version = '0.5.1',
+    version = '0.5.1.1',
     description = 'Table analysis and plotting application written in PySide2/PyQt5',
     long_description = long_description,
     url='https://github.com/dmnfarrell/tablexplore',
