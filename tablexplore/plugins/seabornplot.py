@@ -103,7 +103,8 @@ class SeabornPlugin(Plugin):
                      'ci':{'type':'spinbox','default':95,'range':(0,100)},
                      'fontscale':{'type':'doublespinbox','default':1.5,'range':(.5,3),
                                     'interval':.1, 'label':'font scale'}
-                     #'logy':{'type':'checkbox','default':0,'label':'log y'},
+                     'logy':{'type':'checkbox','default':0,'label':'log y'},
+                     'split':{'type':'checkbox','default':True,'label':'split'},
                      }
 
         grps = {'formats':['kind','palette'],
