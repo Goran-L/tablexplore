@@ -10,10 +10,10 @@ This application is intended primarily for educational/scientific use and allows
 
 ## Installation
 
-For all operating systems with Python and pip installed:
+For all operating systems with Python and pip installed: (MOD Here)
 
 ```
-pip install -e git+https://github.com/dmnfarrell/tablexplore.git#egg=tablexplore
+pip install -e git+https://github.com/Goran-L/tablexplore.git#egg=tablexplore
 ```
 
 ### Linux
