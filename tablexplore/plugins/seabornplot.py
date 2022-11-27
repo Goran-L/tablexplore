@@ -158,7 +158,7 @@ class SeabornPlugin(Plugin):
         for col in ['hue','col','row','x','y','col_wrap']:
             if kwargs[col] in ['',0]:
                 del kwargs[col]
-        #print (kwargs)
+        print (kwargs)
         aspect = height/width        
         sns.set(font_scale=kwds['fontscale'])
         try:
