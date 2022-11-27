@@ -104,7 +104,7 @@ class SeabornPlugin(Plugin):
                      'fontscale':{'type':'doublespinbox','default':1.5,'range':(.5,3),
                                     'interval':.1, 'label':'font scale'}
                      #'logy':{'type':'checkbox','default':0,'label':'log y'},
-                     'split':{'type':'checkbox','default':1,'label':'split'},
+                     #'split':{'type':'checkbox','default':1,'label':'split'},
                      }
 
         grps = {'formats':['kind','palette'],
