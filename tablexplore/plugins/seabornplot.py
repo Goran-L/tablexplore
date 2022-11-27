@@ -153,7 +153,7 @@ class SeabornPlugin(Plugin):
         width,height = 8,6
         #print (kwds)
         kind = kwds['kind']
-        keep = ['hue','col','row','x','y','palette','kind','col_wrap']
+        keep = ['hue','col','row','x','y','palette','kind','col_wrap','split']
         kwargs = {i:kwds[i] for i in keep}
         for col in ['hue','col','row','x','y','col_wrap']:
             if kwargs[col] in ['',0]:
